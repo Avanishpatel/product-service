@@ -1,6 +1,7 @@
 pipeline {
     agent any
-    // { label 'master' }
+
+    
     stages {
        stage('Build') {
           steps {
@@ -8,7 +9,5 @@ pipeline {
              sh './gradlew clean build'
           }
        }
-
-
     }
 }

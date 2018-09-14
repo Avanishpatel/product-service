@@ -64,7 +64,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Jenkinsfile" value="15" />
+          <entry key="Jenkinsfile" value="16" />
           <entry key="gradle" value="3" />
           <entry key="java" value="1105" />
           <entry key="properties" value="80" />
@@ -74,7 +74,7 @@
         <counts>
           <entry key="Groovy" value="3" />
           <entry key="JAVA" value="1105" />
-          <entry key="PLAIN_TEXT" value="15" />
+          <entry key="PLAIN_TEXT" value="16" />
           <entry key="Properties" value="80" />
         </counts>
       </usages-collector>
@@ -121,7 +121,7 @@
         <entry file="file://$PROJECT_DIR$/Jenkinsfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="54">
-              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -776,7 +776,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536943310355" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536944374525" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
@@ -831,12 +831,12 @@
       <workItem from="1536674429404" duration="552000" />
       <workItem from="1536691298432" duration="4590000" />
       <workItem from="1536782842318" duration="1123000" />
-      <workItem from="1536788468749" duration="9227000" />
+      <workItem from="1536788468749" duration="9833000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17758000" />
+    <option name="totallyTimeSpent" value="18364000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1440" height="834" extended-state="6" />
@@ -968,7 +968,7 @@
     <entry file="file://$PROJECT_DIR$/Jenkinsfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
         </state>
       </provider>
     </entry>
