@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage ('Clone') {
             steps{
-        git url: 'https://github.com/Avanishpatel/Lab02.git'
+        git url: 'https://github.com/Avanishpatel/product-service.git'
              }
         }
        stage('Build') {
@@ -13,15 +13,7 @@ pipeline {
              sh './gradlew clean build'
           }
        }
-       stage('Test'){
-           steps{
-               sh './gradlew test'
-           }
-       }
-       stage('Deploy'){
-           steps{
-               sh 'cf push testservice -p ./build/libs/stock-data-persistant-query-0.0.1-SNAPSHOT.jar --no-start'
-           }
-       }
+
+       
     }
 }
