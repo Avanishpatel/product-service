@@ -106,8 +106,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/solstice/productservice/ProductServiceApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="222">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
@@ -115,8 +115,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" selection-start-line="9" selection-start-column="1" selection-end-line="10" selection-end-column="42" />
+            <state relative-caret-position="214">
+              <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -795,12 +795,6 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="product-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="product-service" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -814,7 +808,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537220151001" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537221119664" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
@@ -962,14 +956,11 @@
       <workItem from="1536674429404" duration="552000" />
       <workItem from="1536691298432" duration="4590000" />
       <workItem from="1536782842318" duration="1123000" />
-      <workItem from="1536788468749" duration="43538000" />
+      <workItem from="1536788468749" duration="44502000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ProductRepositoryIntegrationTest_getProducts - 2018.09.17 at 15h 19m 08s.xml">
-      <configuration name="ProductRepositoryIntegrationTest.getProducts" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ProductRepositoryIntegrationTest - 2018.09.17 at 15h 20m 16s.xml">
       <configuration name="ProductRepositoryIntegrationTest" configurationId="JUnit" />
     </history-entry>
@@ -997,9 +988,12 @@
     <history-entry file="ProductServiceIntegrationTest - 2018.09.17 at 15h 50m 07s.xml">
       <configuration name="ProductServiceIntegrationTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ProductServiceIntegrationTest - 2018.09.17 at 16h 44m 38s.xml">
+      <configuration name="ProductServiceIntegrationTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52069000" />
+    <option name="totallyTimeSpent" value="53033000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-31" y="34" width="1440" height="834" extended-state="0" />
@@ -1015,7 +1009,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.47566065" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.47566065" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1134,13 +1128,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/solstice/productservice/ProductServiceApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/solstice/productservice/repository/ProductRepositoryIntegrationTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1114">
@@ -1188,10 +1175,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/solstice/productservice/ProductServiceApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" selection-start-line="9" selection-start-column="1" selection-end-line="10" selection-end-column="42" />
+        <state relative-caret-position="214">
+          <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
         </state>
       </provider>
     </entry>
