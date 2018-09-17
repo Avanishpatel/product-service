@@ -3,8 +3,6 @@ package com.solstice.productservice.controller;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.solstice.productservice.domain.Product;
 import com.solstice.productservice.service.ProductService;
-import com.sun.scenario.effect.impl.prism.PrDrawable;
-import org.apache.commons.lang3.RandomUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
@@ -30,7 +28,7 @@ public class ProductController {
 
     @GetMapping("/{id}")
     @HystrixCommand(fallbackMethod = "getProductByIdFallBack")
-    public Optional<Product> getProductById(@PathVariable("id") long id) {
+    public Product getProductById(@PathVariable("id") long id) {
 
         return productService.getProductById(id);
     }
@@ -45,28 +43,29 @@ public class ProductController {
 
     @PutMapping("/{id}")
     @HystrixCommand(fallbackMethod = "updateProductFallBack")
-    public Product updateProduct(@RequestBody Product product) {
+    public Product updateProduct(@PathVariable("id")long id, @RequestBody Product product) {
         logger.info("Product updated : "+ product.toString());
 
-        return productService.updateProduct(product);
+        return productService.updateProduct(id,product);
     }
 
     @DeleteMapping("/{id}")
     @HystrixCommand(fallbackMethod = "removeProductFallBack")
-    public void removeProduct(long id) {
+    public Product removeProduct(@PathVariable("id") long id) {
         logger.info("Product deleted.");
 
-        productService.removeProduct(id);
+        return productService.removeProduct(id);
     }
 
-    public void removeProductFallBack(){
+    public Product removeProductFallBack(long id){
         logger.error("Fallback while deleting Product");
+        return new Product();
     }
 
-    public Optional<Product> getProductByIdFallBack(long id){
+    public Product getProductByIdFallBack(long id){
 
         logger.error("Fallback while getting product by ID"+ id);
-        return Optional.of(new Product());
+        return new Product();
     }
 
     public Product addProductFallBack(Product product){
@@ -75,7 +74,7 @@ public class ProductController {
         return new Product();
     }
 
-    public Product updateProductFallBack(Product product) {
+    public Product updateProductFallBack(long id, Product product) {
         logger.error("Fallback while updating the product");
         return new Product();
     }

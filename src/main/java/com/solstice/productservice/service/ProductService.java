@@ -4,8 +4,6 @@ import com.solstice.productservice.domain.Product;
 import com.solstice.productservice.repository.ProductRepository;
 import org.springframework.stereotype.Service;
 
-import java.util.Optional;
-
 @Service
 public class ProductService {
 
@@ -20,9 +18,9 @@ public class ProductService {
         return productRepository.findAll();
     }
 
-    public Optional<Product> getProductById(Long id) {
+    public Product getProductById(Long id) {
 
-        return productRepository.findById(id);
+        return productRepository.findById(id).get();
     }
 
     public Product addProduct(Product product) {
@@ -30,12 +28,15 @@ public class ProductService {
         return productRepository.save(product);
     }
 
-    public void removeProduct(long id) {
+    public Product removeProduct(long id) {
+
+        Product product = productRepository.findById(id).get();
 
         productRepository.deleteById(id);
+        return product;
     }
 
-    public Product updateProduct(Product product) {
+    public Product updateProduct(long id, Product product) {
 
         return productRepository.save(product);
     }
