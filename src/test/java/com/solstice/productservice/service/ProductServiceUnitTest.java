@@ -15,15 +15,13 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.Arrays;
 import java.util.List;
+
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.is;
 
 import static org.junit.Assert.*;
 
 import static org.mockito.ArgumentMatchers.any;
-
-import static org.mockito.Mockito.doNothing;
-import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.Silent.class)
@@ -77,7 +75,7 @@ public class ProductServiceUnitTest {
 
         assertThat(product.getName(), is(equalTo("Iphone XR")));
         assertThat(product.getPrice(), is(equalTo(749.99)));
-        assertThat(product.getName(),is(equalTo("Iphone XR")));
+        assertThat(product.getName(), is(equalTo("Iphone XR")));
     }
 
 
@@ -90,7 +88,7 @@ public class ProductServiceUnitTest {
 
         assertThat(product.getName(), is(equalTo("Iphone XR")));
         assertThat(product.getPrice(), is(equalTo(749.99)));
-        assertThat(product.getName(),is(equalTo("Iphone XR")));
+        assertThat(product.getName(), is(equalTo("Iphone XR")));
     }
 
 //    @Test
